@@ -13,6 +13,7 @@ const path = require('path');
 
 const app = express();
 
+const port = process.env.PORT || 8080;
 
 
 //build static here // 
@@ -89,7 +90,6 @@ app.post('/api/forma', (req, res) => {
 
 })
 
-const PORT = 5000;
 
 app.listen(PORT, () => {
   console.log("hi")

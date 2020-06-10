@@ -67,7 +67,7 @@ export default class Form extends Component {
       email: this.state.email,
       message: this.state.message
     }
-    axios.post('http://localhost:5000/api/forma', data)
+    axios.post('/api/forma', data)
       .then(res => {
         this.setState({
           sent: true,
